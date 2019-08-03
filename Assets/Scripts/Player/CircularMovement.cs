@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 using VoodooTest.ApplicationManagement;
@@ -125,6 +124,7 @@ namespace VoodooTest.Player
                 return;
             }
             
+            // Mathf.SmoothDamp is taking Time.deltaTime into account
             currentDelta = Mathf.SmoothDamp(currentDelta, targetDelta , ref deltaVelocity, 0.01f);
             currentAngle += currentDelta;
             
