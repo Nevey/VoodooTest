@@ -125,7 +125,7 @@ namespace VoodooTest.Player
             }
             
             // Mathf.SmoothDamp is taking Time.deltaTime into account
-            currentDelta = Mathf.SmoothDamp(currentDelta, targetDelta , ref deltaVelocity, 0.01f);
+            currentDelta = Mathf.SmoothDamp(currentDelta, targetDelta , ref deltaVelocity, 0.001f);
             currentAngle += currentDelta;
             
             Quaternion rotation = transform.rotation;
