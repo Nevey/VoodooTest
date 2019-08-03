@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014945d7a25a46a3b6d4e497cc1e5b66, type: 3}
+  m_Name: DefaultSequenceConfig
+  m_EditorClassIdentifier: 
+  sequenceType: 0
+  minDuration: 10
+  maxDuration: 20
+  willSpawnCoins: 1
+  willSpawnObstacles: 1
+  willRotateObstacles: 0

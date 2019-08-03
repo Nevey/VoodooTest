@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6626917435659249374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6626917435659249376}
+  - component: {fileID: 6626917435659249377}
+  - component: {fileID: 6626917435211833860}
+  - component: {fileID: 6184676449881271483}
+  - component: {fileID: 6626917435211833859}
+  - component: {fileID: 6654555381434047864}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6626917435659249376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6626917435659249377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbdfcaffdaff00a4da0c4fd1ff762b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldConfig: {fileID: 11400000, guid: 211facaa3b9a8444c9d6fd0bdd1572ec, type: 2}
+  worldSequenceController: {fileID: 6654555381434047864}
+  bezierCircleLightPrefab: {fileID: 8354529881464402687, guid: 46b84e0e3e5903d4c9e85d20b5756e33,
+    type: 3}
+  bezierCircleDarkPrefab: {fileID: 5275146621136310698, guid: 6bd0adf7d1dd5cb4f868c51648201020,
+    type: 3}
+  worldCamera: {fileID: 0}
+  gizmoColor: {r: 0, g: 1, b: 1, a: 0.26666668}
+--- !u!114 &6626917435211833860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c801252e85814291b1b66b9e38104294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldConfig: {fileID: 11400000, guid: 211facaa3b9a8444c9d6fd0bdd1572ec, type: 2}
+  worldSequenceController: {fileID: 6654555381434047864}
+  worldCamera: {fileID: 0}
+  worldObstaclePrefabs:
+  - {fileID: 384897858509118814, guid: b99601b9202f5af4a9990787f8f436bf, type: 3}
+  - {fileID: 2360753880228707415, guid: 6a8c2113f9969454592e31cf9cc3cae8, type: 3}
+  - {fileID: 5753323273835298190, guid: f1dcee52da0df2f4ea88aece362c8386, type: 3}
+  - {fileID: 5753323273835298190, guid: e89d55fd7cde7d14c9ba2efc7eb4d415, type: 3}
+--- !u!114 &6184676449881271483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b48f6e9cdb11cc4ba749222c1b25c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldConfig: {fileID: 11400000, guid: 211facaa3b9a8444c9d6fd0bdd1572ec, type: 2}
+  worldSequenceController: {fileID: 6654555381434047864}
+  worldCamera: {fileID: 0}
+  playerTransform: {fileID: 0}
+  coinPickupPrefab: {fileID: 641243926748825089, guid: bb188fe9352ad414b8fea873942e5c74,
+    type: 3}
+--- !u!114 &6626917435211833859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2179365c83ef1a14688191d045988c71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldSequenceController: {fileID: 6654555381434047864}
+--- !u!114 &6654555381434047864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626917435659249374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272575c128172fa4dad5893a59923f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldConfig: {fileID: 11400000, guid: 211facaa3b9a8444c9d6fd0bdd1572ec, type: 2}
+  angleStepDistance: 0.05
+  minDistanceUntilAngleSwap: 20
+  maxDistanceUntilAngleSwap: 60
+  difficultyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 1.5
+      outSlope: 1.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 2.5
+      inSlope: 1.5
+      outSlope: 1.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  timeUntilMaxDifficulty: 120
+  buildupSequenceConfigs:
+  - {fileID: 11400000, guid: 8efee4843fd3c544aadf46922d33a063, type: 2}
+  - {fileID: 11400000, guid: a2bc6ad52dff1c44a8e7b43049fc9061, type: 2}
+  - {fileID: 11400000, guid: 8efee4843fd3c544aadf46922d33a063, type: 2}
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: a2bc6ad52dff1c44a8e7b43049fc9061, type: 2}
+  - {fileID: 11400000, guid: 8efee4843fd3c544aadf46922d33a063, type: 2}
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: a2bc6ad52dff1c44a8e7b43049fc9061, type: 2}
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: a2bc6ad52dff1c44a8e7b43049fc9061, type: 2}
+  loopableSequenceConfigs:
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: 8efee4843fd3c544aadf46922d33a063, type: 2}
+  - {fileID: 11400000, guid: 8efee4843fd3c544aadf46922d33a063, type: 2}
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: 52fe874170a9e4e419ffbbf2a8518dae, type: 2}
+  - {fileID: 11400000, guid: a2bc6ad52dff1c44a8e7b43049fc9061, type: 2}
+  obstacleBlockMaterial: {fileID: 2100000, guid: 67bfdc27c8cacab4692a2978bca16b64,
+    type: 2}
+  easyColor: {r: 0, g: 0.53333336, b: 1, a: 1}
+  difficultColor: {r: 1, g: 0.054855745, b: 0, a: 1}
